@@ -5,7 +5,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .title h1 {
     font-size: 80px;
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .title {
@@ -22,16 +22,22 @@ p {
     margin-top: 50px;
 }
 
+.byline {
+    text-align: right;
+    padding-right: 15px;
+}
+
 .byline img {
     width: 100%;
-    max-width: 150px;
+    max-width: 200px;
     border-radius: 150px;
     margin-bottom: 20px;
 }
 
 .byline p {
     font-style: italic;
-    font-size: 14px;
+    font-size: 16px;
+    line-height: 1.5em;
 }
 
 .nav-bar {

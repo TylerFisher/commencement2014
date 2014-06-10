@@ -93,4 +93,9 @@ div.article-body p {
     font-weight: 200;
     line-height: 1.6em;
 }
-
+div.inline-img {
+    margin: 30px 0 30px -290px;
+}
+div.inline-img img {
+    width: 860px;
+}

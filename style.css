@@ -1,4 +1,5 @@
 /* GLOBAL STYLES */
+div.container-fluid {max-width: 1400px;}
 h1,h2,h3,h4,h5,h6 {font-family: 'kepler-std-display', Georgia, serif; font-style: italic;}
 p {font-family: "lato", Helvetica, Arial, sans-serif;}
 a {color: #975CD6;}
@@ -73,6 +74,7 @@ div.header div.title span.farewell {
 
 div.list-row {
     margin: 0 3% 20px 3%;
+    max-width: 1175px;
 }
 
 div.list-row img {
@@ -82,6 +84,7 @@ div.list-row img {
 div.list-block {
     position: relative;
     padding: 0 10px;
+    max-width: 295px;
 }
 
 div.mask {
@@ -345,5 +348,12 @@ div.article-body p {
 
     div.landing-page div.mask-text p.name {
         font-size: 22px !important;
+    }
+}
+
+@media (min-width: 1281px) {
+    div.landing-page div.list-row {
+        margin: 0 auto 20px auto;
+        width: 1175px;
     }
 }

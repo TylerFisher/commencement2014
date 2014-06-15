@@ -44,17 +44,30 @@ a:hover {color: #FF9966; text-decoration: none;}
 
 /* TITLE */
 
-div.article {
+/*div.article {
     margin-top: 80px;
+}*/
+
+div.inline-img {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+div.inline-img img {
+    width: 100%;
 }
 
 div.title {
     margin-bottom: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 5%;
 }
 
 div.title h1 {
     font-size: 80px;
     font-weight: 600;
+    color: #fff;
 }
 
 /* BYLINE */
@@ -88,28 +101,23 @@ p.name {
 
 /* ARTICLE BODY */
 
+div.article-body {
+    margin-bottom: 20px;
+}
+
 div.article-body p {
     font-size: 22px;
     font-weight: 200;
     line-height: 1.6em;
+    margin-bottom: 15px;
 }
 
-/**************NEED TO FIX THESE************/
-
-div.inline-img {
-    width: 100%;
-    /*margin: 30px 0 30px -290px;*/
-}
-
-div.inline-img img {
-    width: 100%;
-}
 
 
 /* MEDIA QUERIES */
 
 @media (max-width: 768px) {
-
+    .mobile-hide {display: none;}
     .mobile-show {display: block;}
 
     div.article {
@@ -118,11 +126,13 @@ div.inline-img img {
 
     div.title {
         margin-bottom: 15px;
+        position: static !important;
     }
 
     div.title h1 {
         font-size: 55px;
         line-height: 1em;
+        color: #000;
     }
 
     div.byline {
@@ -135,11 +145,8 @@ div.inline-img img {
         line-height: 1.6em;
     }
 
-    p.last-graf {
-        padding-bottom: 15px;
-    }
-
     p.bio.mobile-show {
+        margin-top: 30px;
         padding-top: 10px;
         border-top: 1px solid #ccc;
     }

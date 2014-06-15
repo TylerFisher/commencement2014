@@ -52,8 +52,34 @@ div.list-row img {
     width: 100%;
 }
 
+div.list-block {
+    position: relative;
+}
 
+div.mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.6;
+}
 
+div.mask-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+
+div.mask-text p {
+    font-family: "kepler-std-display", Georgia, serif !important;
+    font-size: 18px;
+    line-height: 1.2em;
+}
 
 /* //////////////////////// ARTICLE PAGE ///////////// */
 
@@ -105,7 +131,7 @@ p.bio, p.bio.mobile-show {
 
 p.name {
     font-style: italic;
-    line-height: 1.6em;
+    line-height: 1.2em;
     font-weight: 200;
     font-family: "kepler-std-display", Georgia, serif !important;
     font-size: 23px;

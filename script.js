@@ -4,6 +4,8 @@ $(document).ready(function() {
 	}).on('mouseout',function(){
 		$(this).parent().find('.mask').css('opacity','0.6');
 	});
+
+
 });
 
 

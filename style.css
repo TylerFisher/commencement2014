@@ -49,14 +49,15 @@ div.header div.title {
     bottom: 0;
     left: 0;
     right: 0;
+    margin-bottom: 60px;
 }
 
 div.header div.title h1 {
     color: #fff;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: 600px;
     text-align: center;
-    line-height: 1.1em;
+    line-height: 1.2em;
     font-style: normal !important;
 }
 
@@ -76,32 +77,91 @@ div.list-row img {
 
 div.list-block {
     position: relative;
+    padding: 0 10px;
 }
 
 div.mask {
     position: absolute;
     top: 0;
     bottom: 0;
-    right: 0;
-    left: 0;
+    right: 10px;
+    left: 10px;
     background-color: #000;
     opacity: 0.6;
 }
 
 div.mask-text {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    top: 50%;
+    bottom: 50%;
+    left: 20px;
+    right: 20px;
     color: #fff;
+}
+
+div.mask-text a {
+    color: #FF9966 !important;
+}
+
+div.mask-text a:hover {
+    color: #fff !important;
 }
 
 div.mask-text p {
     font-family: "kepler-std-display", Georgia, serif !important;
-    font-size: 18px;
-    line-height: 1.2em;
+    font-size: 35px;
+    line-height: 1em;
+    text-align: center;
 }
+
+div.mask-text p.name {
+    font-size: 25px !important;
+}
+
+/************ grid idea 2 ************/
+
+
+.idea2 div.mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    left: 10px;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+.idea2 div.mask-text {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    right: 20px;
+    color: #fff;
+    height: 100%;
+}
+
+div.mask-text a {
+    color: #FF9966 !important;
+}
+
+div.mask-text a:hover {
+    color: #fff !important;
+}
+
+div.mask-text p {
+    font-family: "kepler-std-display", Georgia, serif !important;
+    font-size: 35px;
+    line-height: 1em;
+    text-align: center;
+}
+
+div.mask-text p.name {
+    font-size: 25px !important;
+}
+
+
+
+
 
 /* //////////////////////// ARTICLE PAGE ///////////// */
 

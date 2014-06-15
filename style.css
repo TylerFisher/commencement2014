@@ -44,6 +44,10 @@ a:hover {color: #FF9966; text-decoration: none;}
 
 /* //////////////////////// LANDING PAGE ////////////// */
 
+div.landing-page {
+    margin-bottom: 30px;
+}
+
 div.header div.title {
     position: absolute;
     bottom: 0;
@@ -259,36 +263,59 @@ div.article-body p {
     .mobile-hide {display: none;}
     .mobile-show {display: block;}
 
+    /* LANDING PAGE */
+
+    div.landing-page {
+        margin-top: 40px;
+    }
+
+    div.landing-page div.header div.title {
+        position: static !important;
+        margin-bottom: 20px;
+    }
+
+    div.landing-page div.header div.title h1 {
+        color: #000;
+        font-size: 30px;
+    }
+
+    div.landing-page div.header div.title span.farewell {
+        font-size: 60px;
+    }
+
+
+    /* ARTICLE PAGE */
+
     div.article {
         margin-top: 30px;
     }
 
-    div.title {
+    div.article div.title {
         /*margin-bottom: 15px;*/
         margin: 0 5% !important;
         position: static !important;
     }
 
-    div.title h1 {
+    div.article div.title h1 {
         font-size: 55px;
         color: #000;
     }
 
-    div.byline {
+    div.article div.byline {
         display: none;
     }
 
-    div.article-body {
+    div.article div.article-body {
         padding: 0 5% 0 5%;
     }
 
-    div.article-body p {
+    div.article div.article-body p {
         font-size: 20px;
         font-weight: 200;
         line-height: 1.6em;
     }
 
-    p.bio.mobile-show {
+    div.article p.bio.mobile-show {
         margin-top: 30px;
         padding-top: 10px;
         border-top: 1px solid #ccc;

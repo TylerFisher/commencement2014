@@ -44,6 +44,28 @@ a:hover {color: #FF9966; text-decoration: none;}
 
 /* //////////////////////// LANDING PAGE ////////////// */
 
+div.header div.title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+div.header div.title h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600px;
+    text-align: center;
+    line-height: 1.1em;
+    font-style: normal !important;
+}
+
+div.header div.title span.farewell {
+    font-size: 150px;
+    font-weight: 900;
+    font-style: italic !important;
+}
+
 div.list-row {
     margin: 0 10% 20px 10%;
 }
@@ -94,14 +116,14 @@ div.inline-img img {
     width: 100%;
 }
 
-div.title {
+div.article div.title {
     margin-bottom: 20px;
     margin-left: 30px;
     position: absolute;
     bottom: 0;
 }
 
-div.title h1 {
+div.article div.title h1 {
     font-size: 80px;
     font-weight: 600;
     color: #fff;

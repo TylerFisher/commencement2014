@@ -1,45 +1,9 @@
 h1,h2,h3,h4,h5,h6 {
-    font-family: "kepler-std-display";
+    font-family: 'kepler-std-display', Georgia, serif;
     font-style: italic;
 }
 
-.title h1 {
-    font-size: 80px;
-    font-weight: 600;
-}
-
-.title {
-    margin-bottom: 40px;
-}
-
-p {
-    font-family: "freight-sans-pro";
-    font-size: 20px;
-    line-height: 1.6em;
-}
-
-.article {
-    margin-top: 50px;
-}
-
-.byline {
-    text-align: right;
-    padding-right: 15px;
-}
-
-.byline img {
-    width: 100%;
-    max-width: 200px;
-    border-radius: 150px;
-    margin-bottom: 20px;
-}
-
-.byline p {
-    font-style: italic;
-    font-size: 16px;
-    line-height: 1.5em;
-}
-
+/* NAV */
 .nav-bar {
     position: fixed;
     top: 0;
@@ -50,32 +14,88 @@ p {
     border-bottom: 1px solid black;
     background-color: #3b1d62;
 }
-
 .nav-bar .nav-items {
     position: relative;
     list-style: none;
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: "freight-sans-pro";
+    font-family: "lato";
 }
-
 .nav-bar .nav-items li {
     position: relative;
     height: 100%;
     display: inline-block;
     font-size: 18px;
 }
-
 .nav-bar .nav-items li:first-child {
     padding-right: 10px;
 }
-
 .nav-bar .nav-items li a {
     color: #fff;
 }
-
 .nav-bar .nav-items li img {
     height: 100%;
     max-height: 40px;
+}
+
+/* GLOBAL ATTRIBUTES */
+p {
+    font-family: "lato", Helvetica, Arial, sans-serif;
+}
+a {
+    color: #975CD6;
+}
+a:hover {
+    color: #FF9966;
+    text-decoration: none;
+}
+
+
+.title h1 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.title {
+    margin-bottom: 40px;
+}
+div.article {
+    margin-top: 80px;
+}
+
+div.byline {
+    text-align: right;
+    padding-right: 15px;
+}
+
+div.byline img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 150px;
+    margin-bottom: 20px;
+}
+
+div.byline p {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.6em;
+    font-weight: 200;
+}
+
+div.byline p.name {
+    font-family: "kepler-std-display", Georgia, serif;
+    font-size: 23px;
+}
+
+div.article-body p {
+    font-size: 22px;
+    font-weight: 200;
+    line-height: 1.6em;
+}
+div.inline-img {
+    margin: 30px 0 30px -290px;
+}
+div.inline-img img {
+    width: 860px;
 }

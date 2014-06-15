@@ -96,11 +96,11 @@ div.mask {
 
 div.mask-text {
     position: absolute;
-    top: 50%;
-    bottom: 50%;
+    top: 25%;
     left: 20px;
     right: 20px;
     color: #fff;
+    overflow: auto;
 }
 
 div.mask-text a {
@@ -125,16 +125,12 @@ div.mask-text p.name {
 /************ grid idea 2 ************/
 
 
-.idea2 div.mask {
+/*.idea2 div.mask {
     display: none;
 }
 
 .idea2 div.mask-text {
     position: absolute;
-    /*top: 0;
-    bottom: 0;
-    left: 20;
-    right: 20px;*/
     margin: auto;
     left: 0;
     right: 0;
@@ -153,23 +149,19 @@ div.mask-text p.name {
     line-height: 1em;
     text-align: center;
     margin: 10px;
-}
+}*/
 
 
 /************ grid idea 3 ************/
 
 
-.idea3 div.mask {
+/*.idea3 div.mask {
     display: none;
     opacity: 0.7 !important;
 }
 
 .idea3 div.mask-text {
     position: absolute;
-    /*top: 0;
-    bottom: 0;
-    left: 20;
-    right: 20px;*/
     margin: auto;
     left: 10px;
     right: 10px;
@@ -180,7 +172,7 @@ div.mask-text p.name {
 
 .idea3 div.mask-text p {
     margin: 15px;
-}
+}*/
 
 
 

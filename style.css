@@ -3,6 +3,7 @@ h1,h2,h3,h4,h5,h6 {font-family: 'kepler-std-display', Georgia, serif; font-style
 p {font-family: "lato", Helvetica, Arial, sans-serif;}
 a {color: #975CD6;}
 a:hover {color: #FF9966; text-decoration: none;}
+.mobile-show {display: none;}
 
 /* NAV */
 
@@ -70,17 +71,17 @@ div.byline img {
     margin-bottom: 20px;
 }
 
-div.byline p {
-    font-style: italic;    
+p.bio, p.bio.mobile-show {
+    font-style: italic;
     line-height: 1.6em;
     font-weight: 200;
-}
-
-div.byline p.bio {
     font-size: 16px;
 }
 
-div.byline p.name {
+p.name {
+    font-style: italic;
+    line-height: 1.6em;
+    font-weight: 200;
     font-family: "kepler-std-display", Georgia, serif !important;
     font-size: 23px;
 }
@@ -102,4 +103,45 @@ div.inline-img {
 
 div.inline-img img {
     width: 100%;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 480px) {
+
+    .mobile-show {display: block;}
+
+    div.article {
+        margin-top: 30px;
+    }
+
+    div.title {
+        margin-bottom: 15px;
+    }
+
+    div.title h1 {
+        font-size: 55px;
+        line-height: 1em;
+    }
+
+    div.byline {
+        display: none;
+    }
+
+    div.article-body p {
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 1.6em;
+    }
+
+    p.last-graf {
+        padding-bottom: 15px;
+    }
+
+    p.bio.mobile-show {
+        padding-top: 10px;
+        border-top: 1px solid #ccc;
+        font-size: 18px;
+    }
 }

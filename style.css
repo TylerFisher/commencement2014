@@ -1,9 +1,12 @@
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'kepler-std-display', Georgia, serif;
-    font-style: italic;
-}
+/* GLOBAL STYLES */
+h1,h2,h3,h4,h5,h6 {font-family: 'kepler-std-display', Georgia, serif; font-style: italic;}
+p {font-family: "lato", Helvetica, Arial, sans-serif;}
+a {color: #975CD6;}
+a:hover {color: #FF9966; text-decoration: none;}
+.mobile-show {display: none;}
 
 /* NAV */
+
 .nav-bar {
     position: fixed;
     top: 0;
@@ -39,30 +42,178 @@ h1,h2,h3,h4,h5,h6 {
     max-height: 40px;
 }
 
-/* GLOBAL ATTRIBUTES */
-p {
-    font-family: "lato", Helvetica, Arial, sans-serif;
+/* //////////////////////// LANDING PAGE ////////////// */
+
+div.landing-page {
+    margin-bottom: 30px;
 }
-a {
-    color: #975CD6;
+
+div.header div.title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 60px;
 }
-a:hover {
-    color: #FF9966;
-    text-decoration: none;
+
+div.header div.title h1 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600px;
+    text-align: center;
+    line-height: 1.2em;
+    font-style: normal !important;
+}
+
+div.header div.title span.farewell {
+    font-size: 150px;
+    font-weight: 900;
+    font-style: italic !important;
+}
+
+div.list-row {
+    margin: 0 10% 20px 10%;
+}
+
+div.list-row img {
+    width: 100%;
+}
+
+div.list-block {
+    position: relative;
+    padding: 0 10px;
+}
+
+div.mask {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    left: 10px;
+    background-color: #000;
+    opacity: 0.6;
+}
+
+div.mask-text {
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    left: 20px;
+    right: 20px;
+    color: #fff;
+}
+
+div.mask-text a {
+    color: #FF9966 !important;
+}
+
+div.mask-text a:hover {
+    color: #fff !important;
+}
+
+div.mask-text p {
+    font-family: "kepler-std-display", Georgia, serif !important;
+    font-size: 35px;
+    line-height: 1em;
+    text-align: center;
+}
+
+div.mask-text p.name {
+    font-size: 25px !important;
+}
+
+/************ grid idea 2 ************/
+
+
+.idea2 div.mask {
+    display: none;
+}
+
+.idea2 div.mask-text {
+    position: absolute;
+    /*top: 0;
+    bottom: 0;
+    left: 20;
+    right: 20px;*/
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 80%;
+    height: 50%;
+    background-color: #000;
+    opacity: 0.8;
+    color: #fff;
+}
+
+.idea2 div.mask-text p {
+    font-family: "kepler-std-display", Georgia, serif !important;
+    font-size: 35px;
+    line-height: 1em;
+    text-align: center;
+    margin: 10px;
 }
 
 
-.title h1 {
+/************ grid idea 3 ************/
+
+
+.idea3 div.mask {
+    display: none;
+    opacity: 0.7 !important;
+}
+
+.idea3 div.mask-text {
+    position: absolute;
+    /*top: 0;
+    bottom: 0;
+    left: 20;
+    right: 20px;*/
+    margin: auto;
+    left: 10px;
+    right: 10px;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+}
+
+.idea3 div.mask-text p {
+    margin: 15px;
+}
+
+
+
+
+
+/* //////////////////////// ARTICLE PAGE ///////////// */
+
+/* TITLE */
+
+div.inline-img {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+div.inline-img img {
+    width: 100%;
+}
+
+div.article div.title {
+    margin-bottom: 20px;
+    margin-left: 30px;
+    position: absolute;
+    bottom: 0;
+}
+
+div.article div.title h1 {
     font-size: 80px;
     font-weight: 600;
+    color: #fff;
+    line-height: 1em;
 }
 
-.title {
-    margin-bottom: 40px;
-}
-div.article {
-    margin-top: 80px;
-}
+/* BYLINE */
 
 div.byline {
     text-align: right;
@@ -76,26 +227,131 @@ div.byline img {
     margin-bottom: 20px;
 }
 
-div.byline p {
+p.bio, p.bio.mobile-show {
     font-style: italic;
-    font-size: 16px;
     line-height: 1.6em;
     font-weight: 200;
+    font-size: 18px;
 }
 
-div.byline p.name {
-    font-family: "kepler-std-display", Georgia, serif;
+p.name {
+    font-style: italic;
+    line-height: 1.2em;
+    font-weight: 200;
+    font-family: "kepler-std-display", Georgia, serif !important;
     font-size: 23px;
+}
+
+/* ARTICLE BODY */
+
+div.article-body {
+    margin-bottom: 20px;
 }
 
 div.article-body p {
     font-size: 22px;
     font-weight: 200;
     line-height: 1.6em;
+    margin-bottom: 15px;
 }
-div.inline-img {
-    margin: 30px 0 30px -290px;
+
+
+
+/* MEDIA QUERIES */
+
+@media (max-width: 767px) {
+    .mobile-hide {display: none;}
+    .mobile-show {display: block;}
+
+    /* LANDING PAGE */
+
+    .col-xs-12 {
+        float: none;
+    }
+
+    div.landing-page {
+        margin-top: 40px;
+    }
+
+    div.landing-page div.header div.title {
+        position: static !important;
+        margin-bottom: 20px;
+    }
+
+    div.landing-page div.header div.title h1 {
+        color: #000;
+        font-size: 30px;
+    }
+
+    div.landing-page div.header div.title span.farewell {
+        font-size: 60px;
+    }
+
+    div.landing-page div.list-row {
+        margin: 0;
+    }
+
+    div.landing-page div.list-block {
+        margin: 10px auto;
+        max-width: 300px;
+    }
+
+    /* ARTICLE PAGE */
+
+    div.article {
+        margin-top: 30px;
+    }
+
+    div.article div.title {
+        /*margin-bottom: 15px;*/
+        margin: 0 5% !important;
+        position: static !important;
+    }
+
+    div.article div.title h1 {
+        font-size: 55px;
+        color: #000;
+    }
+
+    div.article div.byline {
+        display: none;
+    }
+
+    div.article div.article-body {
+        padding: 0 5% 0 5%;
+    }
+
+    div.article div.article-body p {
+        font-size: 20px;
+        font-weight: 200;
+        line-height: 1.6em;
+    }
+
+    div.article p.bio.mobile-show {
+        margin-top: 30px;
+        padding-top: 10px;
+        border-top: 1px solid #ccc;
+    }
 }
-div.inline-img img {
-    width: 860px;
+
+@media (min-width: 768px) and (max-width: 991px) {
+    div.landing-page div.header div.title {
+        margin-bottom: 0;
+    }
+
+    div.landing-page div.list-row {
+        margin: 0 0 20px 0;
+    }
+
+/*    div.landing-page div.list-block {
+        max-width: 300px;
+    }*/
+
+    div.landing-page div.mask-text p {
+        font-size: 28px !important;
+    }
+
+    div.landing-page div.mask-text p.name {
+        font-size: 22px !important;
+    }
 }

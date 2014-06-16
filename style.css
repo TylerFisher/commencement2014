@@ -250,6 +250,12 @@ div.article-body p {
     margin-bottom: 15px;
 }
 
+p.photo-cred {
+    font-size: 18px !important;
+    font-style: italic;
+    color: #ccc;
+}
+
 
 
 /* MEDIA QUERIES */

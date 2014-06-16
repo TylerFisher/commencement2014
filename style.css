@@ -256,6 +256,12 @@ p.photo-cred {
     color: #ccc;
 }
 
+/* BACK BTN */
+div.back {
+    height: 100%;
+    vertical-align: bottom;
+}
+
 
 
 /* MEDIA QUERIES */

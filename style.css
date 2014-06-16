@@ -257,11 +257,14 @@ p.photo-cred {
 }
 
 /* BACK BTN */
-div.back {
-    height: 100%;
-    vertical-align: bottom;
+p.back {
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
 }
 
+p.back span.glyphicon {
+    margin-right: 7px;
+}
 
 
 /* MEDIA QUERIES */
